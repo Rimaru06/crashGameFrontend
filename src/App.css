@@ -1,0 +1,124 @@
+/* App specific styles - most styles are in index.css */
+
+/* Connection Status */
+.connection-status {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.connection-status.connected {
+  background: rgba(0, 212, 170, 0.2);
+  color: #00d4aa;
+  border: 1px solid #00d4aa;
+}
+
+.connection-status.connecting {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  border: 1px solid #ffd700;
+}
+
+.connection-status.disconnected {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #1a1a2e;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 300px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+/* Active Bet Info */
+.active-bet-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 212, 170, 0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #00d4aa;
+  font-size: 0.9rem;
+}
+
+/* Messages Panel */
+.messages-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+.messages-panel h3 {
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.messages-list {
+  height: 200px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.message {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
+
+/* Scrollbar for messages */
+.messages-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.messages-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.messages-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
