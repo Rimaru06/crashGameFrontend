@@ -172,6 +172,17 @@ body {
   background: rgba(0, 212, 170, 0.2);
 }
 
+.crypto-option.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.crypto-option.disabled:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 .bet-controls {
   display: flex;
   flex-direction: column;
@@ -245,6 +256,16 @@ body {
 .btn-danger:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-warning {
+  background: linear-gradient(45deg, #ffa500, #ff8c00);
+  color: white;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
 }
 
 /* Stats Panel */
